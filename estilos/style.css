@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+main {
+    height: 100%;
+    position: relative;
+    background-color: blueviolet;
+}
+/* Quando fazemos o posicionamento absoluto, conseguimos posicioná-lo no topo, nas laterais...
+O  transform: translate(); usamos para ajustar o posicionamento, pois a tela não ficou no meio 
+*/
+section#telefone {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+
+}
