@@ -36,3 +36,10 @@ O  transform: translate(); usamos para ajustar o posicionamento, pois a tela nã
     A principio deixamos assim: background: blue url('../imagens/frame-iphone.png')no-repeat; com essa cor de fundo para facilitar os ajustes de largura e altura, depois retira*/
 
 }
+iframe#tela {
+    position: relative;
+    top: 79px ;
+    left: 22px ;
+    width: 269px;
+    height: 473px;
+}
