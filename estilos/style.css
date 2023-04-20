@@ -10,22 +10,29 @@ html, body {
     height: 100vh;
     background-color: rgb(0, 0, 0);
 }
+body {
+    background: url('../imagens/fundo-madeira.jpg')no-repeat top center;
+    background-size: cover;/* Para cobrir a tela inteira*/
+    background-attachment: fixed;/* Para não  ter rolagem*/
+
+}
 main {
+    /* O container terá um posicionamento relativo, pois usaremos um conteúdo dentro dele com um posicinamento absoluto*/
     height: 100%;
     position: relative;
-    background-color: blueviolet;
 }
-/* Quando fazemos o posicionamento absoluto, conseguimos posicioná-lo no topo, nas laterais...
+section#telefone {
+    /* Quando fazemos o posicionamento absoluto, conseguimos posicioná-lo no topo, nas laterais...
 O  transform: translate(); usamos para ajustar o posicionamento, pois a tela não ficou no meio 
 */
-section#telefone {
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 500px;
-    height: 500px;
-    background-color: blue;
+/*Consultamos largura e altura da imagem pelo Gimp.*/ 
+    width: 311px;
+    height: 627px;
+    background: url('../imagens/frame-iphone.png')no-repeat; /*No-repeat para a imagem do iphone não se rtepetir. 
+    A principio deixamos assim: background: blue url('../imagens/frame-iphone.png')no-repeat; com essa cor de fundo para facilitar os ajustes de largura e altura, depois retira*/
 
 }
