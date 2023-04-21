@@ -43,3 +43,19 @@ iframe#tela {
     width: 269px;
     height: 473px;
 }
+section#redes-socias img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*Deixando os logos redondos*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.801);
+}
+section#redes-socias {
+    text-align: right;
+}
+section#redes-socias img:hover {
+    border: 2px solid beige; /*Colocando a bordinha ao passar o  mouse em cima */
+    transform: translate(-4px, -4px); /*movimentando a logo p cima */
+    transition: transform .3s; /*moovimentando mais lento */
+    box-shadow: 5px 5px 10px solid rgba(0, 0, 0, 0.63);
+}
+
